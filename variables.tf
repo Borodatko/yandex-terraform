@@ -14,14 +14,6 @@ variable "nat" {
   default = "CHANGEME"
 }
 
-variable "org_name" {
-  default = "CHANGEME"
-}
-
-variable "workspace_name" {
-  default = "CHANGEME"
-}
-
 variable "domain" {
   default = "CHANGEME"
 }
