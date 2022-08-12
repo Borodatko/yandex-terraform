@@ -1,7 +1,7 @@
 resource "yandex_compute_instance" "runner" {
   name = "runner"
   zone = "ru-central1-a"
-  hostname = "${var.instance_runner}"
+  hostname = "runner.${var.domain}"
   allow_stopping_for_update = true
 
   resources {
@@ -20,7 +20,6 @@ resource "yandex_compute_instance" "runner" {
 
   network_interface {
     subnet_id = "${yandex_vpc_subnet.internal.id}"
-    ip_address = "${var.runner_ip}"
     nat = false
   }
 

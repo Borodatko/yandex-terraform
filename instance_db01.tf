@@ -1,7 +1,7 @@
 resource "yandex_compute_instance" "db01" {
   name = "db01"
   zone = "ru-central1-a"
-  hostname = "${var.instance_db01}"
+  hostname = "db01.${var.domain}"
   allow_stopping_for_update = true
 
   resources {
@@ -20,7 +20,6 @@ resource "yandex_compute_instance" "db01" {
 
   network_interface {
     subnet_id = "${yandex_vpc_subnet.internal.id}"
-    ip_address = "${var.db01_ip}"
     nat = false
   }
 

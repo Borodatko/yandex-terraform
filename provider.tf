@@ -1,4 +1,3 @@
-# Provider
 terraform {
   required_providers {
     yandex = {
@@ -6,7 +5,7 @@ terraform {
     }
   }
   cloud {
-    organization = "changeme"
+    organization = "${var.org_name}"
     hostname = "app.terraform.io"
     workspaces {
       name = "${var.workspace_name}"

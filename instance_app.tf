@@ -1,7 +1,7 @@
 resource "yandex_compute_instance" "app" {
   name = "app"
   zone = "ru-central1-a"
-  hostname = "${var.instance_app}"
+  hostname = "app.${var.domain}"
   allow_stopping_for_update = true
 
   resources {
@@ -20,7 +20,6 @@ resource "yandex_compute_instance" "app" {
 
   network_interface {
     subnet_id = "${yandex_vpc_subnet.internal.id}"
-    ip_address = "${var.app_ip}"
     nat = false
   }
 
