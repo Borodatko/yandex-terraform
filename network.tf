@@ -1,4 +1,3 @@
-# Network
 resource "yandex_vpc_network" "net" {
   name = "net"
 }

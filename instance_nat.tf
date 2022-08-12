@@ -1,7 +1,7 @@
-resource "yandex_compute_instance" "nginx" {
-  name = "nginx"
+resource "yandex_compute_instance" "nat" {
+  name = "nat"
   zone = "ru-central1-a"
-  hostname = "${var.instance_nginx}"
+  hostname = "nat"
   allow_stopping_for_update = true
 
   resources {
@@ -11,16 +11,16 @@ resource "yandex_compute_instance" "nginx" {
 
   boot_disk {
     initialize_params {
-      image_id = "${var.centos-7-base}"
-      name = "root-nginx"
+      image_id = "${var.nat}"
+      name = "root-nat"
       type = "network-nvme"
       size = "15"
     }
   }	
 
   network_interface {
-    subnet_id = "${yandex_vpc_subnet.internal.id}"
-    ip_address = "${var.nginx_int_ip}"
+    subnet_id = "${yandex_vpc_subnet.external.id}"
+    ip_address = "${var.nat_ext_ip}"
     nat = true
   }
 

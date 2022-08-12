@@ -1,39 +1,71 @@
 variable "yandex_cloud_id" {
-  default = "changeme"
+  default = "CHANGEME"
 }
 
 variable "yandex_folder_id" {
-  default = "changeme"
+  default = "CHANGEME"
 }
 
 variable "centos-7-base" {
-  default = "changeme"
+  default = "CHANGEME"
+}
+
+variable "workspace_name" {
+  default = "CHANGEME"
+}
+
+variable "instance_app" {
+  default = "CHANGEME"
+}
+
+variable "instance_db01" {
+  default = "CHANGEME"
+}
+
+variable "instance_db02" {
+  default = "CHANGEME"
+}
+
+variable "instance_gitlab" {
+  default = "CHANGEME"
+}
+
+variable "instance_monitoring" {
+  default = "CHANGEME"
+}
+
+variable "instance_nginx" {
+  default = "CHANGEME"
+}
+
+variable "instance_runner" {
+  default = "CHANGEME"
 }
 
 variable "nginx_ip" {
-  default = "10.20.100.150"
+  default = "CHANGEME"
 }
 
 variable "db01_ip" {
-  default = "10.20.100.151"
+  default = "CHANGEME"
 }
 
 variable "db02_ip" {
-  default = "10.20.100.152"
+  default = "CHANGEME"
 }
 
 variable "app_ip" {
-  default = "10.20.100.153"
+  default = "CHANGEME"
 }
 
 variable "gitlab_ip" {
-  default = "10.20.100.154"
+  default = "CHANGEME"
 }
 
 variable "runner_ip" {
-  default = "10.20.100.155"
+  default = "CHANGEME"
 }
 
 variable "monitoring_ip" {
-  default = "10.20.100.156"
+  default = "CHANGEME"
 }

@@ -9,7 +9,7 @@ terraform {
     organization = "changeme"
     hostname = "app.terraform.io"
     workspaces {
-      name = "stage"
+      name = "${var.workspace_name}"
     }
   }
 }
