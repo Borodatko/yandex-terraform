@@ -10,6 +10,10 @@ variable "centos-7-base" {
   default = "CHANGEME"
 }
 
+variable "nat" {
+  default = "CHANGEME"
+}
+
 variable "org_name" {
   default = "CHANGEME"
 }

@@ -11,7 +11,8 @@ Variables
 |------|-------------|------|---------------|
 | yandex_cloud_id | ID of the cloud | string | CHANGEME |
 | yandex_folder_id | ID of the folder | string | CHANGEME |
-| centos-7-base | ID of the OS image | string | CHANGEME |
+| centos-7-base | ID of the CentOS image | string | CHANGEME |
+| nat | ID of the NAT image | string | CHANGEME |
 | org_name | organization name in terraform.io | string | CHANGEME |
 | workspace_name | name of your workspace | string | CHANGEME |
 | domain | domain name | string | CHANGEME |
