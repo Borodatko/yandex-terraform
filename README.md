@@ -7,7 +7,7 @@ Terraform CentOS 7 template build for Yandex Cloud
 Provider.tf
 -----------
 
-Next variable must be changed in provider.tf
+Next variable must be changed in cloud directive of provider.tf
 
 - organization
 - name
@@ -23,6 +23,15 @@ Example:
     }
   }
 ```
+
+Also, you need the **service account key file in json format**. Put the key in directory with terraform files!
+
+
+SSH public key
+--------------
+
+**Put your ssh public key in directory with terraform files**
+
 
 Variables
 ---------

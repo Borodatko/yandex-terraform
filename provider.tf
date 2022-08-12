@@ -5,10 +5,10 @@ terraform {
     }
   }
   cloud {
-    organization = "${var.org_name}"
+    organization = "CHANGEME"
     hostname = "app.terraform.io"
     workspaces {
-      name = "${var.workspace_name}"
+      name = "CHANGEME"
     }
   }
 }
