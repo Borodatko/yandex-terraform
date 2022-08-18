@@ -1,6 +1,6 @@
 resource "yandex_compute_instance" "nat" {
   name = "nat"
-  zone = "ru-central1-a"
+  zone = "ru-central1-b"
   hostname = "nat"
   allow_stopping_for_update = true
 

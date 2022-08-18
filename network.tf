@@ -21,7 +21,7 @@ resource "yandex_vpc_subnet" "internal" {
 
 resource "yandex_vpc_subnet" "external" {
   name = "external"
-  zone = "ru-central1-a"
+  zone = "ru-central1-b"
   network_id = "${yandex_vpc_network.net.id}"
   v4_cidr_blocks = ["192.168.1.0/24"]
 }
